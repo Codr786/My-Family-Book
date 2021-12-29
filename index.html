@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <title>
+            Family book
+        </title>
+
+        <link rel="stylesheet" href="style.css" type="text/css">
+
+    </head>
+    <body>
+        <centre>
+            <h1>
+                My Family Book
+            </h1>
+
+            <img id="image_family" src="https://n1.sdlcdn.com/imgs/e/5/u/The-Family-Book-SDL072821322-1-2990d.jpg">
+            <p id="name_family"></p>
+            <button id="next_button"onclick="update();"> Click Here </button>
+    
+          
+        </centre>
+
+        <script>
+            var images = ["https://n1.sdlcdn.com/imgs/e/5/u/The-Family-Book-SDL072821322-1-2990d.jpg","https://thumbs.dreamstime.com/b/father-portrait-handsome-man-shirt-jeans-sweater-wearing-glasses-cartoon-character-standing-dad-vector-illustration-86364395.jpg","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMPq-ZJSdzYr7ejQJmtwArJ3wZgNQwnPXwIaUtCY8Di7VipFcPZR17uvDr5yKhuTGMYw0&usqp=CAU","https://thumbs.dreamstime.com/b/happy-cheerful-father-daughter-playing-around-dad-lifting-up-his-girl-air-isolated-cute-cartoon-vector-illustration-112457841.jpg"];
+var names = ["Famaily Book","Navneet Juneja (My Dad,He is the Head of the House)", "Tanya juneja (Me,I am the Princess)", "Me and My Dad"]
+var i = 0;
+function update()
+{
+    i++;
+    var numbers_of_family_member_in_array = 3
+    if(i > numbers_of_family_member_in_array)
+      {
+          i = 0;
+      }
+    
+    var updatedImage = images[i];
+    var updatedName = names[i] ;
+ 
+    document.getElementById("image_family").src = updatedImage;
+    document.getElementById("name_family").innerHTML = updatedName;
+}
+        </script>
+    </body>
+</html>
+

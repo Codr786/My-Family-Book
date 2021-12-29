@@ -1,0 +1,39 @@
+html{
+    scroll-behavior: smooth;
+} 
+ body{
+     background-color:rgb(188, 250, 252);
+     text-align: center;
+     border:solid;
+     border-width: 20px;
+     border-color:darkcyan;
+ }
+ h1{
+     size: 70px;
+     color: darkcyan;
+     font-family: sans-serif;
+     font-weight: bolder;
+     margin-top: 20px;
+ }
+ #images{
+     width:220px;
+     height: 320px;
+ }
+ p{
+   size:35px;
+   color: darkgreen;
+   font-family: Arial;
+   font-weight: 900;
+ }
+#image_family{
+   height: 420px;
+   width:320px;
+}
+#next_button{
+   background-color: darkgrey;
+   color: black;
+   border-radius: 20px;
+   size: 30px;
+}
+ 
+
